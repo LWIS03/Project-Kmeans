@@ -1,0 +1,7 @@
+﻿  dataset.cpp
+C:\Users\Lluis\Documents\GitHub\Proyecto_A_k-means\proyectoAlgoritmica\dataset.cpp(93,25): warning C4244: 'argumento': conversión de 'double' a '_Ty'; posible pérdida de datos
+C:\Users\Lluis\Documents\GitHub\Proyecto_A_k-means\proyectoAlgoritmica\dataset.cpp(93,25): warning C4244:         with
+C:\Users\Lluis\Documents\GitHub\Proyecto_A_k-means\proyectoAlgoritmica\dataset.cpp(93,25): warning C4244:         [
+C:\Users\Lluis\Documents\GitHub\Proyecto_A_k-means\proyectoAlgoritmica\dataset.cpp(93,25): warning C4244:             _Ty=int
+C:\Users\Lluis\Documents\GitHub\Proyecto_A_k-means\proyectoAlgoritmica\dataset.cpp(93,25): warning C4244:         ]
+  proyectoAlgoritmica.vcxproj -> C:\Users\Lluis\Documents\GitHub\Proyecto_A_k-means\x64\Debug\proyectoAlgoritmica.exe

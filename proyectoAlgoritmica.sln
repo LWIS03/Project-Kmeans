@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "proyectoAlgoritmica", "proyectoAlgoritmica\proyectoAlgoritmica.vcxproj", "{80D61713-356D-4929-9A33-EB649818EDA2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{2F1A87E9-DCEB-4665-A3CD-AE6CDB7C4DAB}"
+	ProjectSection(SolutionItems) = preProject
+		proyectoAlgoritmica\kmeans.cpp = proyectoAlgoritmica\kmeans.cpp
+		proyectoAlgoritmica\kmeans.h = proyectoAlgoritmica\kmeans.h
+		proyectoAlgoritmica\kmedoids.cpp = proyectoAlgoritmica\kmedoids.cpp
+		proyectoAlgoritmica\kmedoids.h = proyectoAlgoritmica\kmedoids.h
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80D61713-356D-4929-9A33-EB649818EDA2}.Debug|x64.ActiveCfg = Debug|x64
+		{80D61713-356D-4929-9A33-EB649818EDA2}.Debug|x64.Build.0 = Debug|x64
+		{80D61713-356D-4929-9A33-EB649818EDA2}.Debug|x86.ActiveCfg = Debug|Win32
+		{80D61713-356D-4929-9A33-EB649818EDA2}.Debug|x86.Build.0 = Debug|Win32
+		{80D61713-356D-4929-9A33-EB649818EDA2}.Release|x64.ActiveCfg = Release|x64
+		{80D61713-356D-4929-9A33-EB649818EDA2}.Release|x64.Build.0 = Release|x64
+		{80D61713-356D-4929-9A33-EB649818EDA2}.Release|x86.ActiveCfg = Release|Win32
+		{80D61713-356D-4929-9A33-EB649818EDA2}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0544B6B8-41E4-4B49-88F1-97A50152C355}
+	EndGlobalSection
+EndGlobal
