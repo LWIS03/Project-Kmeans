@@ -1,61 +1,59 @@
-# K-Means and Variants: Experimental Evaluation
+# Clustering Algorithms and Evaluation Methods
 
-This project involves the implementation and experimental evaluation of the **k-means clustering algorithm** and at least two of its variants. The main goals are to analyze the **efficiency** and **quality** of clustering solutions using these algorithms.
+This project involves the design and experimental analysis of **clustering algorithms**, specifically the **k-means** algorithm and its variants, focusing on evaluating their **efficiency**, **clustering quality**, and finding the **optimal number of clusters (k)**.
 
 ## Objectives
 
-1. **Implement Clustering Algorithms**:
-   - Standard k-means (Lloyd's algorithm).
-   - At least one additional variant (e.g., k-means++, k-medians, or k-medoids).
+1. **Implementation**:
+   - Basic **k-means** algorithm.
+   - Two advanced variants: **k-means++** (improved initialization) and **k-medoids** (uses medoids instead of centroids).
 
-2. **Evaluate Clustering Quality**:
-   - Internal quality measures (e.g., intra-cluster distance, silhouette score).
-   - External quality measures (e.g., Rand Index) comparing results with ground truth.
+2. **Quality Control**:
+   - **Internal evaluation**: Metrics like Average Silhouette to assess cluster compactness.
+   - **External evaluation**: Rand Index to compare clustering results against ground truth or other algorithms.
 
-3. **Optimize Cluster Count (k)**:
-   - Implement methods like the Elbow Method to determine the optimal number of clusters.
+3. **Optimization**:
+   - Determine the **optimal number of clusters (k)** using methods like the **Elbow Method**.
 
-4. **Experimental Analysis**:
-   - Measure execution times.
-   - Compare clustering quality across algorithms and datasets.
-   - Test robustness with repeated executions and randomized initializations.
+4. **Experimentation**:
+   - Compare algorithm performance across datasets.
+   - Measure execution time, clustering quality, and consistency.
 
-## Project Phases
+## Features
 
-### Part 1: Implementation of Clustering Algorithms
-- Develop the standard k-means algorithm and at least one variant.
-- Variants may differ in initialization methods, distance metrics, or stopping criteria.
+- **Internal Quality Metrics**:
+  - **Average Silhouette**: Evaluates how well elements fit within their clusters.
+  - Computational efficiency improvements using simplified metrics.
 
-### Part 2: Evaluation Methods
-- **Internal Measures**: Quantify the quality of cluster separations based on intra- and inter-cluster distances.
-- **External Measures**: Compare clustering results with ground truth using similarity metrics like Rand Index.
-- Implement methods to determine the optimal number of clusters (e.g., Elbow Method).
+- **External Quality Metrics**:
+  - **Rand Index**: Measures similarity between clustering results.
+  - Efficient implementation using hashing for faster calculations.
 
-### Part 3: Experimental Analysis
-- Conduct experiments on provided datasets.
-- Evaluate execution time, clustering quality, and the effectiveness of optimal k determination.
-- Analyze algorithm performance with varying dataset properties.
+- **Synthetic Data Generator**:
+  - Generates Gaussian-clustered datasets with user-defined parameters (clusters, dimensions, and points per cluster).
 
-## Deliverables
-- **Code**:
-  - Implemented algorithms, evaluation methods, and experiments.
-  - Clear instructions for compilation and execution.
-- **Report**:
-  - Summary of implementations.
-  - Experimental setup and results (with graphs and tables).
-  - Conclusions on algorithm performance and clustering quality.
+## Experimental Setup
 
-## Instructions
-1. **Team Formation**: Teams of 4 members must be registered by February 26, 2024.
-2. **Submission**:
-   - A compressed `.zip` file containing:
-     - All source code.
-     - A PDF report (`InformeEquipoID.pdf`).
-   - Submission deadline: March 22, 2024, at 23:59.
-3. **Evaluation**:
-   - Quality of implementation, experiments, and documentation.
-   - Demonstration of self-learning and methodology in the report.
+1. **Algorithms**:
+   - Compare **k-means**, **k-means++**, and **k-medoids** on provided and synthetic datasets.
 
----
+2. **Evaluation**:
+   - Analyze internal and external quality metrics.
+   - Use the **Elbow Method** to find the optimal k.
 
-This project is part of the **Algorithms course (GRAU-A)** at the **Universitat Politècnica de Catalunya**.
+3. **Execution Times**:
+   - Record and compare execution times for each algorithm.
+
+## Results and Conclusions
+
+- **Performance**:
+  - **k-means++** offers better initialization and typically converges faster than standard **k-means**.
+  - **k-medoids** is more accurate but computationally expensive due to higher complexity.
+
+- **Consistency**:
+  - High Rand Index values indicate consistent clustering across algorithms.
+
+- **Optimal k**:
+  - The Elbow Method effectively identifies the optimal number of clusters.
+
+This project showcases the strengths and limitations of clustering algorithms, providing a framework for evaluating and improving unsupervised learning models.
